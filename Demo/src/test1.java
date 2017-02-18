@@ -19,11 +19,8 @@ public class test1 {
 	public void demo(){
 		String s;
     	s = System.getenv("UserProfile");
-    	s = s + "\\chromedriver.exe";
-    	
-    	System.out.println(s);
-    	
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\driver\\chromedriver.exe");
+    	s = s + "\\Desktop\\git\\Demo\\drivers\\chromedriver.exe";   	
+		System.setProperty("webdriver.chrome.driver", s);
 		
 		driver=new ChromeDriver();
 		driver.get(URL);
@@ -37,21 +34,4 @@ public class test1 {
 		driver.findElement(By.xpath("//*[@id=\"ctl00_A10\"]")).click();
 		driver.quit();
 		}
-
-	    public String GetProfileName () {
-	    	
-//	    	Map<String, String> env = System.getenv();
-//	        for (String envName : env.keySet()) {
-//	            System.out.format("%s=%s%n",
-//	                              envName,
-//	                              env.get(envName));
-//	        }
-
-	    	
-	    	String s;
-	    	s = System.getenv("UserProfile");
-	    	
-	        return(s);
-		}
-
 	}
