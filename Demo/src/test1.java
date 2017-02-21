@@ -33,5 +33,6 @@ public class test1 {
 		driver.findElement(By.xpath("//*[@id=\"ctl00_A2\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"ctl00_A10\"]")).click();
 		driver.quit();
+		System.out.println("hello world");
 		}
 	}
